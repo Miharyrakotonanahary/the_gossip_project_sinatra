@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gossip</title>
+</head>
+<body>
+	 <h1>Édite un potin !</h1>
+
+    <p>Édite le potin n° <%= params["id"] %> via le formulaire ci-dessous</p>
+    <form action='/edit_gossip/<%= params["id"] %>' method='POST'>
+      Édite ton blase : <input type='text' name='gossip_author'/><br/>
+      Édite ton potin : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
+
+
+</body>
+</html>
